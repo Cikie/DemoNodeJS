@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mua bán sản phẩm</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+</head>
+<body class="bg-info" style="background: linear-gradient(to right, #333399, #ff00cc);">
+<div>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand btn btn-info bg-warning" style="border-radius: initial" href="#">Navbar</a>
+            <button class="navbar-toggle border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active " aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link disabled ">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex bg-light bg-gradient" role="search">
+                    <input class="form-control opacity-50" type="search" placeholder="Click here -->" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</div>
+<div>
+    <a type="button" class="btn btn-info bg-warning bg-gradient" href="/product/create">Tạo mới</a>
+    <br>
+    <table class="table table-dark table-striped">
+        <thead>
+        <tr>
+            <th scope="col">STT</th>
+            <th scope="col">Tên Sản Phẩm</th>
+            <th scope="col">Giá</th>
+            <th scope="col">Lựa Chọn</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+       {products}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
